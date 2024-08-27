@@ -63,9 +63,10 @@ def predict_image_class(model, image, classes):
     return predicted_class_name
 
 # Streamlit App
-logo_url = r"C:\Users\ZBOOK\Desktop\Fruit\orange-fruit-logo-vector-illustration-template_395528-original.png"
+# image upload 
+image_path = os.path.join(base_dir, 'orange-fruit-logo-vector-illustration-template_395528-original.png')
 
-st. image(logo_url, width = 300)
+st. image(image_path, width = 300)
 
 st.title('Fruit Image Classifier')
 
