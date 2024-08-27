@@ -12,8 +12,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 os.environ['PYTHONIOENCODING'] = 'UTF-8'
 
 # Define the working directory and paths
-model_path = r'C:\Users\ZBOOK\Desktop\Fruit\Fruit_image_class_CNN.h5'
-
+base_dir = os.path.dirname(__file__)
+model_path = os.path.join(base_dir, 'Fruit_image_class_CNN.h5')
 # Load the pre-trained model
 model = tf.keras.models.load_model(model_path)
 
